@@ -1,0 +1,26 @@
+abstract class Car{
+    int price;
+    abstract void start();
+}
+
+class audi extends Car{
+    void start()
+    {
+        System.out.println("AUDI");
+    }
+}
+class bmw extends Car{
+    void start()
+    {
+        System.out.println("BMW");
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        audi obj1=new audi();
+        obj1.start();
+        
+        bmw obj2=new bmw();
+        obj2.start();
+    }
+}
