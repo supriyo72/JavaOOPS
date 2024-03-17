@@ -1,0 +1,52 @@
+class person
+{
+    String name;
+    int age;
+    
+    static int count;
+    public person()
+    {
+        count++;
+        System.out.println("Creating an object");
+    }
+    public person(int age,String name)
+    {
+        this();
+        this.name=name;
+        this.age=age;
+    }
+    public void eat()
+    {
+        System.out.println(name + " is eating" + " having age of "+ age);
+    }
+    public void walk()
+    {
+        System.out.println(name + " is walking");
+    }
+    public void walk(int steps)
+    {
+        System.out.println(name + " is walking "+ steps+" steps having age of "+ age);
+    }
+    
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        person obj1= new person();
+        obj1.name= "Aman";
+        obj1.age=19;
+        
+        person obj2= new person(22,"Supriyo");
+        
+        obj1.eat();
+        obj1.walk(100);
+        obj2.eat();
+        obj2.walk(200);
+        obj1.walk();
+        obj2.walk();
+        
+        System.out.println(person.count);
+        
+        
+    }
+}
