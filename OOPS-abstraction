@@ -1,6 +1,10 @@
 abstract class Car{
     int price;
     abstract void start();
+    void breaks()
+    {
+        System.out.println("Car is breaking");
+    }
 }
 
 class audi extends Car{
@@ -19,8 +23,11 @@ class HelloWorld {
     public static void main(String[] args) {
         audi obj1=new audi();
         obj1.start();
+        obj1.breaks();
         
         bmw obj2=new bmw();
         obj2.start();
+        obj2.breaks();
+        
     }
 }
