@@ -1,0 +1,25 @@
+interface Car{
+    void start();
+}
+interface Person{
+    void walk();
+}
+class transformer implements Car,Person{
+    public void start()
+    {
+        System.out.println("AUDI");
+    }
+    public void walk()
+    {
+        System.out.println("Walking");
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        transformer obj1=new transformer();
+        obj1.start();
+        obj1.walk();
+        
+        
+    }
+}
